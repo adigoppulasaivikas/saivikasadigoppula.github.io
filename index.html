@@ -2,142 +2,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Sai Vikas Adigoppula</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f8fafc;
-      color: #1f2937;
-    }
-    header {
-      background: #1961e5;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    h1 {
-      margin: 0;
-      font-size: 36px;
-      font-family: "Times New Roman", serif;
-    }
-    h2 {
-      margin-top: 40px;
-      color: #1961e5;
-      font-family: "Times New Roman", serif;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      margin-top: 20px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
-    ul {
-      padding-left: 20px;
-    }
-    .highlight {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 10px;
-    }
-    .badge {
-      background: #e5edff;
-      color: #1961e5;
-      padding: 8px 12px;
-      border-radius: 20px;
-      font-size: 14px;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #6b7280;
-    }
-    a {
-      color: #1961e5;
-      text-decoration: none;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sai Vikas Portfolio</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  color: #111827;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 60px 0;
+}
+
+.hero img {
+  width: 260px;
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.hero h1 {
+  font-size: 42px;
+  font-family: "Times New Roman";
+}
+
+.hero p {
+  font-size: 18px;
+  color: #6b7280;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #1961e5;
+  color: white;
+  border-radius: 10px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+/* CARDS */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  margin-top: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 15px;
+}
+
+.metric {
+  background: #eef2ff;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.metric h2 {
+  color: #1961e5;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  color: gray;
+}
+</style>
+
 </head>
 
 <body>
 
-<header>
-  <h1>Sai Vikas Adigoppula</h1>
-  <p>Senior Full Stack .NET Developer | AI & Cloud Engineer</p>
-  <p>📧 saivikasadigoppula97@gmail.com | 📞 +1 573-920-0821</p>
-  <p><a href="https://www.linkedin.com/in/adigoppula-sai-vikas-a0837a151/" target="_blank">LinkedIn Profile</a></p>
-</header>
-
 <div class="container">
 
-  <div class="card">
-    <h2>Profile</h2>
-    <p>
-      Results-driven Full Stack .NET Developer with 5+ years of experience building scalable enterprise applications across finance, healthcare, and industrial domains. Strong expertise in .NET, React, Angular, cloud platforms, and AI-powered solutions using Azure OpenAI and ML.NET.
-    </p>
+  <!-- HERO -->
+  <div class="hero">
+    <div>
+      <h1>Sai Vikas Adigoppula</h1>
+      <p>Senior Full Stack .NET Engineer | AI + Cloud Specialist</p>
+      <p>Building scalable systems with .NET, Azure, and AI automation</p>
+
+      <a class="btn" href="mailto:saivikasadigoppula97@gmail.com">Contact Me</a>
+      <a class="btn" href="https://www.linkedin.com/in/adigoppula-sai-vikas-a0837a151/" target="_blank">LinkedIn</a>
+      <a class="btn" href="https://github.com/adigoppulasaivikas" target="_blank">GitHub</a>
+    </div>
+
+    <!-- 🔥 USE YOUR PHOTO NAME HERE -->
+    <img src="profile.jpg" alt="Sai Vikas">
   </div>
 
+  <!-- METRICS -->
   <div class="card">
-    <h2>Impact Highlights</h2>
-    <div class="highlight">
-      <div class="badge">Reduced manual calibration by 60%</div>
-      <div class="badge">Improved AI tuning accuracy by 45%</div>
-      <div class="badge">Handled 500K+ transactions/day</div>
-      <div class="badge">Reduced downtime by 25%</div>
-      <div class="badge">Cut support workload by 35%</div>
+    <h2>Impact</h2>
+    <div class="grid">
+      <div class="metric"><h2>60%</h2><p>Manual effort reduced</p></div>
+      <div class="metric"><h2>45%</h2><p>Accuracy improved</p></div>
+      <div class="metric"><h2>500K+</h2><p>Transactions/day</p></div>
+      <div class="metric"><h2>35%</h2><p>Support reduced</p></div>
     </div>
   </div>
 
+  <!-- EXPERIENCE -->
   <div class="card">
     <h2>Experience</h2>
-    <ul>
-      <li><b>Motherson (2024 - Present)</b><br>
-        Built AI-powered smart wall tuning platform using .NET 8, Azure OpenAI, SignalR, and ML.NET.</li>
-
-      <li><b>Pennymac (2024 - 2025)</b><br>
-        Developed scalable APIs handling 10,000+ daily transactions and integrated AI for customer automation.</li>
-
-      <li><b>JP Morgan Chase (2023 - 2024)</b><br>
-        Built secure banking systems handling 500K+ transactions/day with AI-powered reporting.</li>
-
-      <li><b>OSI Digital (2018 - 2021)</b><br>
-        Developed healthcare and e-commerce applications with .NET, Angular, and Azure.</li>
-    </ul>
+    <p><b>Motherson</b> – AI Smart Wall Platform (.NET 8, Azure OpenAI, SignalR)</p>
+    <p><b>Pennymac</b> – High-scale APIs & AI automation</p>
+    <p><b>JP Morgan</b> – Secure banking systems (500K+ transactions/day)</p>
+    <p><b>OSI Digital</b> – Healthcare & e-commerce platforms</p>
   </div>
 
+  <!-- SKILLS -->
   <div class="card">
-    <h2>Technical Skills</h2>
-    <div class="highlight">
-      <div class="badge">C# / .NET Core</div>
-      <div class="badge">React / Angular</div>
-      <div class="badge">SQL Server</div>
-      <div class="badge">Azure / AWS</div>
-      <div class="badge">Microservices</div>
-      <div class="badge">Docker / Kubernetes</div>
-      <div class="badge">OpenAI / ML.NET</div>
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="metric">.NET / C#</div>
+      <div class="metric">React / Angular</div>
+      <div class="metric">Azure / AWS</div>
+      <div class="metric">OpenAI / ML.NET</div>
+      <div class="metric">Microservices</div>
+      <div class="metric">Docker / Kubernetes</div>
     </div>
   </div>
 
-  <div class="card">
-    <h2>Education</h2>
-    <p><b>MS Computer Science</b> – University of Central Missouri</p>
-    <p><b>BS Computer Science</b> – Vel Tech University</p>
+  <div class="footer">
+    © 2026 Sai Vikas Adigoppula
   </div>
 
 </div>
-
-<footer>
-  © 2026 Sai Vikas Adigoppula
-</footer>
 
 </body>
 </html>
